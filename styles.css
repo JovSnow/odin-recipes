@@ -24,11 +24,9 @@ html {
 .cool-list {
     list-style-type: none; /* Remove default numbers */
     padding: 0;
-    position: fix;
   }
   
   .cool-list li {
-    position: relative;
     padding: 10px 15px;
     margin-bottom: 10px;
     background-color: #EAECC6; /* Light background */
