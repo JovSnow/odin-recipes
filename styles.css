@@ -1,0 +1,45 @@
+html {
+    background-color: #97b8d8;
+}
+
+#main-title{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #EAECC6;
+    background-color: royalblue; /* Light gray background */
+    padding: 10px; /* Add padding for space around the title */
+    border-radius: 5px;
+    margin-bottom: 10px; /* Add space below the title */
+    border-bottom: 2px solid #ccc; /* Add a subtle bottom border */
+    text-align: left; /* Center the title (optional) */
+    font-size: 2.5em; /* Make the title larger (optional) */
+    font-weight: bold; /* Make the title bold (optional) */
+}
+
+.menu-text {
+    color: black;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cool-list {
+    list-style-type: none; /* Remove default numbers */
+    padding: 0;
+    position: fix;
+  }
+  
+  .cool-list li {
+    position: relative;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    background-color: #EAECC6; /* Light background */
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center;
+  }
+
+  .cool-list li a { /* Style the anchor tag */
+    text-decoration: none; /* Remove underline */
+    display: block; /* Make the anchor tag fill the list item */
+    width: 100%; /* Make the anchor tag fill the list item */
+    height: 100%;/* Make the anchor tag fill the list item */
+  }
