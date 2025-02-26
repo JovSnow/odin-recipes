@@ -1,6 +1,10 @@
-html {
+html, body {
     background-color: #97b8d8;
+    margin: 0;
+    padding: 0;
 }
+
+
 
 #main-title{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -15,18 +19,30 @@ html {
     font-weight: bold; /* Make the title bold (optional) */
 }
 
+a.home-button {
+    display: inline-block;
+    background-color: #EAECC6;
+    padding: 5px 10px;
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none;
+    color: #333;
+    clip-path: polygon(20% 0, 100% 0, 100% 100%, 20% 100%, 0 50%); /* Arrow pointing left */
+    transition: background-color 0.3s ease;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .menu-text {
-    color: black;
+    color: #333;
     text-decoration: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.cool-list {
+.home-list {
     list-style-type: none; /* Remove default numbers */
     padding: 0;
   }
   
-  .cool-list li {
+  .home-list li {
     padding: 10px 15px;
     margin-bottom: 10px;
     background-color: #EAECC6; /* Light background */
@@ -35,9 +51,22 @@ html {
     text-align: center;
   }
 
-  .cool-list li a { /* Style the anchor tag */
+  .home-list li a { /* Style the anchor tag */
     text-decoration: none; /* Remove underline */
     display: block; /* Make the anchor tag fill the list item */
     width: 100%; /* Make the anchor tag fill the list item */
     height: 100%;/* Make the anchor tag fill the list item */
+  }
+
+  .img-container {
+    display: flex; /* Use flexbox for horizontal centering */
+    justify-content: center; /* Center the image horizontally */
+    width: 100%; /* Make the container take full width */  
+  }
+
+  .img-dimension {
+    width: 300px; /* Fixed width for the image */
+    height: auto;
+    object-fit: contain; /* Maintain aspect ratio */
+    border-radius: 40px;
   }
