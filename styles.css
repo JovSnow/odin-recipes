@@ -81,6 +81,11 @@ a.home-button {
     
   }
 
+  #content-body { /* This controls the margins of phone sizes */
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
   #sub-title{
     font-size: 2.2em;
     display: flex; /* Use flexbox for horizontal centering */
@@ -92,11 +97,6 @@ a.home-button {
     border-top: solid royalblue;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     border-right: 2px solid royalblue;
-  }
-
-  #content-body { /* This controls the margins of phone sizes */
-    margin-left: 40px;
-    margin-right: 40px;
   }
 
   @media (min-width: 768px) { /* This controls the margins of normal web page size */
