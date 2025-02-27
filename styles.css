@@ -15,7 +15,7 @@ html, body {
     padding: 10px; /* Add padding for space around the title */
     margin-top: 0px;
     margin-bottom: 10px; /* Add space below the title */
-    border-bottom: 2px solid #ccc; /* Add a subtle bottom border */
+    border-bottom: 2px solid #EAECC6; /* Add a subtle bottom border */
     text-align: left; /* Center the title (optional) */
     font-size: 2.5em; /* Make the title larger (optional) */
     font-weight: bold; /* Make the title bold (optional) */
@@ -32,6 +32,8 @@ a.home-button {
     transition: background-color 0.3s ease;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-left: 7px; /* Add left margin */
+    border-top: 1px solid royalblue;
+    border-right: 1px solid royalblue;
 }
 
 .menu-text {
@@ -75,6 +77,8 @@ a.home-button {
     object-fit: contain; /* Maintain aspect ratio */
     border-radius: 40px;
     border: 2px solid #EAECC6;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    
   }
 
   #sub-title{
@@ -82,11 +86,43 @@ a.home-button {
     display: flex; /* Use flexbox for horizontal centering */
     justify-content: center; /* Center the text horizontally */
     width: 100%; /* Make the text take full width */  
-    
+    color: #333;
+    background-color: #EAECC6;
+    border-radius: 10px;
+    border-top: solid royalblue;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-right: 2px solid royalblue;
   }
 
-  #content-body {
+  #content-body { /* This controls the margins of phone sizes */
     margin-left: 40px;
-    margin-right: 110px;
-    margin-top: 0px;
+    margin-right: 40px;
   }
+
+  @media (min-width: 768px) { /* This controls the margins of normal web page size */
+    #content-body {
+      margin: 0 auto; /* Center the content */
+      max-width: 800px; /* Adjust max-width as needed */
+      padding: 20px; /* Optional: Add padding for visual spacing */
+    }
+
+    .side-by-side-list { /* This makes the unordered list "ingredients" be side by side */
+      display: grid;
+      grid-template-columns: 1fr 1fr; /* Two equal columns */
+      column-gap: 70px; /* Add space between columns */
+    }
+  }
+
+  ul, ol, li {
+    margin-top: 20px; /* Adds vertical spacing */
+}
+
+p{
+    margin-bottom: 20px; /* Adds vertical spacing */
+}
+
+h2 {
+  border-bottom: 1px solid #333; /* Add a bottom border to divide contents */
+  padding-bottom: 10px; /* Optional: Add some padding below the heading */
+  margin-bottom: 20px; /* Optional: Add space below the heading and line */
+}
