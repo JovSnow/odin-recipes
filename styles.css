@@ -2,6 +2,8 @@ html, body {
     background-color: #97b8d8;
     margin: 0;
     padding: 0;
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
@@ -9,9 +11,9 @@ html, body {
 #main-title{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #EAECC6;
-    background-color: royalblue; /* Light gray background */
+    background-color: royalblue;
     padding: 10px; /* Add padding for space around the title */
-    border-radius: 5px;
+    margin-top: 0px;
     margin-bottom: 10px; /* Add space below the title */
     border-bottom: 2px solid #ccc; /* Add a subtle bottom border */
     text-align: left; /* Center the title (optional) */
@@ -29,6 +31,7 @@ a.home-button {
     clip-path: polygon(20% 0, 100% 0, 100% 100%, 20% 100%, 0 50%); /* Arrow pointing left */
     transition: background-color 0.3s ease;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 7px; /* Add left margin */
 }
 
 .menu-text {
@@ -49,6 +52,8 @@ a.home-button {
     border-radius: 5px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     text-align: center;
+    margin-left: 7px; /* Add left margin */
+    margin-right: 7px;
   }
 
   .home-list li a { /* Style the anchor tag */
@@ -69,4 +74,19 @@ a.home-button {
     height: auto;
     object-fit: contain; /* Maintain aspect ratio */
     border-radius: 40px;
+    border: 2px solid #EAECC6;
+  }
+
+  #sub-title{
+    font-size: 2.2em;
+    display: flex; /* Use flexbox for horizontal centering */
+    justify-content: center; /* Center the text horizontally */
+    width: 100%; /* Make the text take full width */  
+    
+  }
+
+  #content-body {
+    margin-left: 40px;
+    margin-right: 110px;
+    margin-top: 0px;
   }
