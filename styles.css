@@ -87,7 +87,7 @@ a.home-button {
   }
 
   #sub-title{
-    font-size: 2.2em;
+    font-size: 1.3em;
     display: flex; /* Use flexbox for horizontal centering */
     justify-content: center; /* Center the text horizontally */
     width: 100%; /* Make the text take full width */  
@@ -104,6 +104,10 @@ a.home-button {
       margin: 0 auto; /* Center the content */
       max-width: 800px; /* Adjust max-width as needed */
       padding: 20px; /* Optional: Add padding for visual spacing */
+    }
+
+    #sub-title {
+        font-size: 2.2em;
     }
 
     .side-by-side-list { /* This makes the unordered list "ingredients" be side by side */
